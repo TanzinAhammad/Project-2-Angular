@@ -1,0 +1,41 @@
+<div class="nav">
+  <img
+    width="40"
+    alt="Angular Logo"
+    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+  />
+  <span>Angular Basic Day-2 Project-2</span>
+    <div class="spacer"></div>
+    <a [routerLink]="['/home']">
+      Home
+    </a>
+    <a [routerLink]="['/login']">
+      Login
+    </a>
+</div>
+<div class="welcome">
+  <h1>Welcome to the Angular Basic Project</h1>
+  <h3>Current Route: {{route}}</h3>
+
+  <div *ngIf="route==='/'" class="description">
+    
+    <h2>Description of the Project</h2>
+    <p>This project contains two routes:</p>
+    <li><a [routerLink]="['/login']">Login Route</a></li>
+    <li><a [routerLink]="['/home']">Home Route</a></li>
+    <p>This project contains one service called friend</p>
+    <p>This project contains two modules:</p>
+    <li>Login Module</li>
+    <li>Home Module</li>
+    <p>Login module contains two components:</p>
+    <li>Home-Page Component</li>
+    <li>Card Component</li>
+    <p>Home module contains two components:</p>
+    <li>Login-Page Component</li>
+    <li>Button Component</li>
+    
+  </div>
+
+  
+</div>
+<router-outlet></router-outlet>
